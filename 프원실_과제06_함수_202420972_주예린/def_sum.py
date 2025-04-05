@@ -1,22 +1,17 @@
-number = []
 
-def main():
-    while True:
-        n = int(input("숫자를 입력하세요 (끝내려면 0 입력): "))
-        
-        if n == 0:
-            break
-        else:
-            number.append(n)
-    
-    total = my_sum(number)
-    print(f"총 합은 {total}입니다.")
 
-def my_sum(num_list):
+
+def my_sum(num):
     total = 0
-    for n in num_list:
+    for n in range(1,num+1):
         total += n
     return total
+
+def main():
+    n = int(input("숫자를 입력하세요 : "))
+        
+    print(f"1부터 {n}까지의 합은 {my_sum(n)}입니다.")
+
 
 if __name__ == "__main__":
     main()
