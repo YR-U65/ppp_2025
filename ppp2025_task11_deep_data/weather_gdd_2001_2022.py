@@ -171,7 +171,7 @@ def main():
     
 
     print(f"연간 최고 일교차 일수, 일교차는 \n {arrange(diff_date, diff_gap)} 입니다.\n")
-    print(f"연간 GDD는 \n {gdd_arrange(data_months, gdd)} 입니다.")
+    print(f"연간 {months} 월의 GDD는 \n {gdd_arrange(data_months, gdd)} 입니다.")
     
     months_sp = 4, 5, 6, 7, 8, 9, 10, 11, 12
     tavg_gdd_over = weather_months_datas(filename, n = years, month = list(months_sp), col_ind = 4)
